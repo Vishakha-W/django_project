@@ -1,0 +1,10 @@
+{% if p %}
+<ul> {%for bp1 in p %}
+   <li>{{bp1.author}}</li>
+    <li>{{bp1.title}} </li>
+    <li>{{bp1.text}}</li>
+	 {% endfor %}
+</ul>
+{% else %}
+<h3>you dont have  any data</h3>
+{%endif%}
